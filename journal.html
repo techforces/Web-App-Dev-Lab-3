@@ -10,6 +10,11 @@
 	body {
 		margin: 0;
 		background-image: url(bg.jpg);
+		height: 100vh;
+	}
+
+	*:hover {
+		background-color: yellow;
 	}
 
 	.container {
@@ -52,7 +57,6 @@
 	.orange {
 		border: none;
 		font-size: 14pt;
-
 	}
 
 	img {
@@ -61,6 +65,22 @@
 	}
 	p {
 		text-align: left;
+	}
+
+	.secondary {
+		display: flex;
+		flex-direction: row;
+		background-color: white;
+		border: none;
+	}
+
+	.friends {
+		background-color: cyan;
+		border: 5px solid darkcyan;
+		margin: 5px;
+		box-sizing: border-box;
+		min-width: 250px;
+		height: 300px;
 	}
 </style>
 
@@ -73,21 +93,33 @@
 		</h1>
 		<h2 class="orange">I did not use float, only flexbox. Because, I think that float is outdated and unncessarily complicated. Industry had moved from float to flexbox, it is not intuitive and not efficient as flexbox.</h2>
 	</div>
-	<div>
-		<h2><span class="date">20/03/2022:</span> Spatulas!</h2>
-		<div class="content">
-			<img src="spatula.jpg" alt="">
-			<p>A spatula is a hand-held tool that is used for lifting, flipping, or spreading. Spatulas have a handle that is long enough to keep the holder's hand away from what is being lifted or spread, as well as away from a hot surface.
-
-The blade of the spatula is wide and thin. The shape of the blade varies, with square and rectangular shapes being most common. The blade is usually somewhat flexible. Spatula blades are often longer on the right side than the left, as this is more effective for right-handed people. There are also left-handed spatulas, but these are rarer.</p>
+	<div class="secondary">
+		<div class="friends">
+			<h1>Friends</h1>
+			<ul>
+				<li><a herf = “#Testing1”>Testing1</a></li>
+				<li><a herf = “#Testing2”>Testing3</a></li>
+				<li><a herf = “#Testing3”>Testing3</a> </li>
+			</ul>
 		</div>
-	</div>
-	<div>
-		<h2><span class="date">19/03/2022:</span> Cookies!</h2>
-		<div class="content">
-			<img src="cookie.jpg" alt="">
-			<p>Cookies are nice, I like cookies! Yesterday I bought some cookies to eat all them alone!</p>
-		</div>	
+
+		<section>
+			<div>
+				<h2><span class="date">20/03/2022:</span> Spatulas!</h2>
+				<div class="content">
+					<img src="spatula.jpg" alt="">
+					<p>A spatula is a hand-held tool that is used for lifting, flipping, or spreading. Spatulas have a handle that is long enough to keep the holder's hand away from what is being lifted or spread, as well as away from a hot surface. The blade of the spatula is wide and thin. The shape of the blade varies, with square and rectangular shapes being most common. The blade is usually somewhat flexible. Spatula blades are often longer on the right side than the left, as this is more effective for right-handed people. There are also left-handed spatulas, but these are rarer.</p>
+				</div>
+			</div>
+			<div>
+				<h2><span class="date">19/03/2022:</span> Cookies!</h2>
+				<div class="content">
+					<img src="cookie.jpg" alt="">
+					<p>Cookies are nice, I like cookies! Yesterday I bought some cookies to eat all them alone!</p>
+				</div>	
+			</div>
+		</section>
+		
 	</div>
 </div>
 
