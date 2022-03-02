@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<style>
+	body {
+		margin: 0;
+		background-image: url(bg.jpg);
+	}
+
+	.container {
+		padding: 0;
+		margin: 0 10% 0;
+		border: 10px solid white;
+		background-color: white;
+	}
+
+
+	div {
+		border: 4px solid #C2E9E9;
+		background-color: #E8FBFB;
+		padding: 5px;
+		box-sizing: border-box;
+		margin-top: 10px;
+	}
+
+	.content {
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		border: none;
+
+	}
+
+
+	.date {
+		border-bottom: 2px dashed blue;
+	}
+
+	#header {
+		border: none;
+		background-color: #A8F0F0;
+		margin-top: 0px;
+		padding: 0;
+		text-align: right;
+	}
+
+	.orange {
+		border: none;
+		font-size: 14pt;
+
+	}
+
+	img {
+		object-fit: contain;
+		width: 300px;
+	}
+	p {
+		text-align: left;
+	}
+</style>
+
+<body>
+
+<div class="container">
+	<div id="header">
+		<h1>
+			Khurshid's Journal
+		</h1>
+		<h2 class="orange">I did not use float, only flexbox. Because, I think that float is outdated and unncessarily complicated. Industry had moved from float to flexbox, it is not intuitive and not efficient as flexbox.</h2>
+	</div>
+	<div>
+		<h2><span class="date">20/03/2022:</span> Spatulas!</h2>
+		<div class="content">
+			<img src="spatula.jpg" alt="">
+			<p>A spatula is a hand-held tool that is used for lifting, flipping, or spreading. Spatulas have a handle that is long enough to keep the holder's hand away from what is being lifted or spread, as well as away from a hot surface.
+
+The blade of the spatula is wide and thin. The shape of the blade varies, with square and rectangular shapes being most common. The blade is usually somewhat flexible. Spatula blades are often longer on the right side than the left, as this is more effective for right-handed people. There are also left-handed spatulas, but these are rarer.</p>
+		</div>
+	</div>
+	<div>
+		<h2><span class="date">19/03/2022:</span> Cookies!</h2>
+		<div class="content">
+			<img src="cookie.jpg" alt="">
+			<p>Cookies are nice, I like cookies! Yesterday I bought some cookies to eat all them alone!</p>
+		</div>	
+	</div>
+</div>
+
+</body>
+</html>
